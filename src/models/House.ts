@@ -9,7 +9,7 @@ import {
   BelongsTo,
 } from "sequelize-typescript";
 
-@Table({ tableName: "houses" })
+@Table({ tableName: "houses" , schema: "delta_project", timestamps: false })
 export class House extends Model {
   @PrimaryKey
   @AutoIncrement

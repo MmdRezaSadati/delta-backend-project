@@ -11,7 +11,7 @@ import {
 import { User } from "./User";
 import { Category } from "./Category";
 
-@Table({ tableName: "blogs" })
+@Table({ tableName: "blogs", schema: "delta_project", timestamps: false  })
 export class Blog extends Model {
   @PrimaryKey
   @AutoIncrement

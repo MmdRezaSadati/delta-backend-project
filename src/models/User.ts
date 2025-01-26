@@ -7,7 +7,7 @@ import {
   DataType,
 } from "sequelize-typescript";
 
-@Table({ tableName: "users" })
+@Table({ tableName: "users", schema: "delta_project", timestamps: false  })
 export class User extends Model {
   @PrimaryKey
   @AutoIncrement

@@ -7,7 +7,7 @@ import {
   DataType,
 } from "sequelize-typescript";
 
-@Table({ tableName: "social_media_links" })
+@Table({ tableName: "social_media_links", schema: "delta_project", timestamps: false })
 export class SocialMediaLink extends Model {
   @PrimaryKey
   @AutoIncrement

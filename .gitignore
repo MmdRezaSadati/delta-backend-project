@@ -12,7 +12,7 @@ logs/
 .idea/
 
 .DS_Store
-
+migrations/
 dist/
 build/
 

@@ -9,7 +9,7 @@ import {
 import { User } from "./User";
 import { House } from "./House";
 
-@Table({ tableName: "favorites" })
+@Table({ tableName: "favorites" , schema: "delta_project", timestamps: false })
 export class Favorite extends Model {
   @ForeignKey(() => User)
   @PrimaryKey
